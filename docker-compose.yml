@@ -1,0 +1,8 @@
+services:
+  web-api:
+    build: .
+    ports:
+      - "7777:7777"
+    volumes:
+      - .:/app
+    restart: unless-stopped
